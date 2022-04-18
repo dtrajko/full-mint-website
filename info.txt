@@ -1,0 +1,33 @@
+npx create-react-app full-mint-website
+npm install -g npm@8.7.0
+cd .\full-mint-website\
+npm i -D hardhat
+npx hardhat
+npm install --save-dev "hardhat@^2.9.3" "@nomiclabs/hardhat-waffle@^2.0.0" "ethereum-waffle@^3.0.0" "chai@^4.2.0" "@nomiclabs/hardhat-ethers@^2.0.0" "ethers@^5.0.0"
+npm i @openzeppelin/contracts
+npm i @chakra-ui/react @emotion/react@^11 @emotion/styled@^11 framer-motion@^6
+
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
+npm install -l solc # -g for global, -l for local
+
+MetaMask Rinkeby Test Network ETH: ******************************************
+Infura Rinkeby endpoint: (stored in /.env file)
+https://rinkeby.infura.io/v3/********************************
+
+Etherscan API Key: **********************************
+
+npm i -D dotenv
+
+npx hardhat clean
+npx hardhat compile
+npx hardhat run .\scripts\deployRoboPunksNFT.js --network rinkeby
+
+"RoboPunksNFT deployed to: ******************************************" (contract address)
+https://rinkeby.etherscan.io/address/******************************************
+https://rinkeby.etherscan.io/address/******************************************#code
+
+npm i -D @nomiclabs/hardhat-etherscan
+
+npx hardhat verify --network rinkeby ******************************************
+
+npm run start
