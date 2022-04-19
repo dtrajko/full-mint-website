@@ -30,4 +30,7 @@ npm i -D @nomiclabs/hardhat-etherscan
 
 npx hardhat verify --network rinkeby ******************************************
 
+MetaMask Account 2 Dev private key:
+****************************************************************
+
 npm run start
